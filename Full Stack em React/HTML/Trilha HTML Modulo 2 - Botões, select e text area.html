@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="alert('Utilize o onsubmit para validar campos ou enviar mensagem entre outras funcionalidades.')" method="get">
+        Este é meu formulário        <br>
+        Nome:  <input type="text" name="name" /><br>
+        Idade:  <input type="number" name="age" min="0" max="120" step="5"/><br>        
+        Senha: <input type="password" name="password" /><br>
+        Cargo com tag select: 
+        <select name="role">
+            <option value="">Selecione o cargo</option>
+            <option value="Administrativo">Administrativo</option>
+            <option value="Analista de TI">Analista de TI</option>
+            <option value="CEO">CEO</option>
+            <option value="Estagiário">Estagiário</option>
+        </select><br>
+        <label>Mensagem: </label><textarea rows="10" name="message"> </textarea><br>
+        <button type="Button" onclick="alert('Você Clicou!')">Não clique</button><br>
+        <button type="reset" onclick="alert('Os campos foram apagados!')">Limpar os campos</button><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html> 

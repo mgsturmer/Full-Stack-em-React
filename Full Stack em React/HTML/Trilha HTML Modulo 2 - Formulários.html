@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <form name="signup" onsubmit="alert('Formulário enviado com sucesso.')" autocomplete="off" method="post" action="https://meusite.com.br/signup"> <!--  Site onde vai bater o formulário -->
+        <!-- O atributo method pode ter get ou post -->
+        <!-- POST manda a requisição por um corpo sem aparecer na url os dados -->
+        <!-- O Autocomplete ativa/desativa autocompletar -->
+        Este é meu formulário<br>
+        Nome:  <input type="text" name="name" /><br>
+        Idade:  <input type="number" name="age" min="0" max="120" step="5"/><br>        
+        Senha: <input type="password" name="password" /><br>
+        <!-- existem diversos tipos para serem usados com type="xxxxx" -->
+        <label>Telefone: </label> <input type="number" name="phone"/><br>
+        <!-- Duas maneiras de submeter botões -->
+        <label> Button: </label><input type="Button" value="Enviar"/>
+        <button> Enviar </button>
+        <br>
+        <button type="Submit">Enviar</button><br>
+        <label>Range percentual: </label><input type="Range" min="0" max="100"></input><br>
+        <label>E-mail: </label><input type="email"/><br>
+        <label>Data: </label><input type="date"/><br>
+        <label>URL: </label><input type="url"/><br>
+        <label>Week: </label><input type="week" value="Enviar"/><br>
+        <label>Month: </label><input type="month" value="Enviar"/><br>
+        <label>Checkbox: </label><input type="checkbox" value="Yes"/><input type="checkbox" value="No"/><br>
+        <label>Radio: </label><input type="radio" value="Concordo"/><input type="radio" value="Discordo"/><br>
+        <label>Hidden: </label><input type="hidden" value="Enviar"/><br>
+        <label>Button: </label><input type="Button" value="Enviar"/><br>
+    </form>
+</body>
+</html>

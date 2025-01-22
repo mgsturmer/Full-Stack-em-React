@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria do Matheus</title>
+</head>
+<body>
+    <form method="get">
+        <!-- Usando get para ver os valores enviados na URL -->
+        <h3> Você selecinou a Pizza 4 Queijos.</h3>
+        <p>Informe agora seus opcionais: </p>
+        <input type="checkbox" disabled name ="opcional[]" value ="Queijo"> Adicionar Queijo <br>
+        <!-- O Disable desativa o campo - Quem adiciona queijo na pizza 4 queijos??? -->
+        <input type="checkbox" disable name ="opcional[]" value ="Calabresa"> Adicionar Calabresa <br>
+        <input type="checkbox" disable name ="opcional[]" value ="Cebola"> Adicionar Cebola <br>
+        <input type="checkbox" disable name ="opcional[]" value ="Azeitona"> Adicionar Azeitona <br>
+        <p> Gostaria de borda recheada? </p>
+        <input type="radio" name="borda" value="Sim" >Sim<br>
+        <input type="radio" name="borda" value="Não" >Não<br>        
+        <p>Bebida</p>
+        <input type="radio" name="borda" value="Suco" >Suco<br>
+        <input type="radio" name="borda" value="Refrigerante" >Refrigerante<br>        
+        <input type="radio" name="borda" value="Água" >Água<br>
+        <input type="radio" name="borda" value="Nenhuma bebida" >Nenhuma bebida<br>        
+        
+        <button type="submit">Enviar pedido!<br>
+    
+    </form>
+</body>
+</html> 
