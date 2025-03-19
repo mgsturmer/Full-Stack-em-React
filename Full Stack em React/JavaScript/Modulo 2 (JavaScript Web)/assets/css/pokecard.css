@@ -15,21 +15,21 @@
 /* Estilização do conteúdo do modal */
 .modal-content {
     background: url('../images/pokeballbackground.jpg') no-repeat center center; /* Imagem de fundo */
-    background-size: cover;  /* Cobre todo o espaço da carta */
+    background-size: cover;  /* Cobre toda a carta */
     position: relative;
     padding: 20px;
     border-radius: 10px;
     text-align: left;
     width: 350px;
     font-family: Arial, sans-serif;
-    border: 12px solid #022F89; /* Borda da carta de Pokémon com a cor fornecida */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave para dar o efeito de destaque */
+    border: 12px solid #022F89; /* Borda da carta de */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra */
     overflow: hidden; /* Garante que os elementos internos não saiam da borda */
-    background-color: rgba(255, 255, 255, 0.753); /* Cor de fundo branca com opacidade */
+    background-color: rgba(255, 255, 255, 0.7); /* Cor de fundo branca */
 }
 
 /* Nome do Pokémon */
-#pokemonName {
+#pokemonName { 
     font-size: 24px;
     font-weight: bold;
     text-transform: capitalize;
@@ -105,6 +105,8 @@
 
 
 /* Tipos específicos com suas cores */
+/* Utilizando class typeCard para não sobrepor o tipo utilizado na pagina inicial */
+
 .typesCard .normal {
     background-color: #a6a877;
 }
