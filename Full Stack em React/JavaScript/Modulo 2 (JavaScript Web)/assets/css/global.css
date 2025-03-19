@@ -1,0 +1,46 @@
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none; 
+    text-decoration-style: none; 
+    text-decoration-color: none;
+}
+
+h1{
+    font-family: 'Pokemon Solid', sans-serif;
+    font-weight: 25;
+    background-color: white;
+    -webkit-text-stroke-width: 2px; /* Largura da borda */
+    -webkit-text-stroke-color: rgb(28, 76, 148); /* Cor da borda */
+    color: yellow;
+    margin-left: 3rem;
+    letter-spacing: 0.3rem;
+}
+body {
+    background-color: red;
+}
+
+.blockquote{
+    font-style: italic;
+    font-weight: normal;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}

@@ -1,0 +1,178 @@
+/* Fundo escuro transparente para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilização do conteúdo do modal */
+.modal-content {
+    background: url('../images/pokeballbackground.jpg') no-repeat center center; /* Imagem de fundo */
+    background-size: cover;  /* Cobre todo o espaço da carta */
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    width: 350px;
+    font-family: Arial, sans-serif;
+    border: 12px solid #022F89; /* Borda da carta de Pokémon com a cor fornecida */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave para dar o efeito de destaque */
+    overflow: hidden; /* Garante que os elementos internos não saiam da borda */
+    background-color: rgba(255, 255, 255, 0.753); /* Cor de fundo branca com opacidade */
+}
+
+/* Nome do Pokémon */
+#pokemonName {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+/* Número do Pokémon */
+.pokemon-number {
+    font-size: 18px;
+    color: gray;
+}
+
+/* Botão de fechar */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Imagem do Pokémon */
+#pokemonImage {
+    display: block;
+    margin: 10px auto;
+    width: 120px;
+    height: auto;
+}
+
+/* Tipos do Pokémon */
+.typesCard {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 5px;
+}
+
+.typesCard li {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+/* Estatísticas do Pokémon */
+.stat {
+    display: flex;
+    justify-content: flex-end;  /* Alinha os itens à direita */
+    gap: 10px;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    width: 100%; /* Garante que o conteúdo ocupe toda a largura disponível */
+}
+
+/* Barra de status */
+.stat-bar-container {
+    width: 50%;  /* Definindo a largura da barra para 50% */
+    height: 15px;  /* Definindo uma altura uniforme para todas as barras */
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 10px;  /* Um pequeno espaçamento entre o texto e a barra */
+}
+
+/* Barra de progresso */
+.stat-bar {
+    height: 100%;
+    background-color: #4caf50; /* Cor verde para a barra */
+    width: 0%; /* A largura será ajustada no JavaScript */
+    transition: width 0.5s ease-out; /* Transição suave quando a largura mudar */
+}
+
+
+/* Tipos específicos com suas cores */
+.typesCard .normal {
+    background-color: #a6a877;
+}
+
+.typesCard .grass {
+    background-color: #77c850;
+}
+
+.typesCard .fire {
+    background-color: #ee7f30;
+}
+
+.typesCard .water {
+    background-color: #678fee;
+}
+
+.typesCard .electric {
+    background-color: #f7cf2e;
+}
+
+.typesCard .ice {
+    background-color: #98d5d7;
+}
+
+.typesCard .ground {
+    background-color: #dfbf69;
+}
+
+.typesCard .flying {
+    background-color: #a98ff0;
+}
+
+.typesCard .poison {
+    background-color: #a040a0;
+}
+
+.typesCard .fighting {
+    background-color: #bf3029;
+}
+
+.typesCard .psychic {
+    background-color: #f65687;
+}
+
+.typesCard .dark {
+    background-color: #725847;
+}
+
+.typesCard .rock {
+    background-color: #b8a137;
+}
+
+.typesCard .bug {
+    background-color: #a8b720;
+}
+
+.typesCard .ghost {
+    background-color: #6e5896;
+}
+
+.typesCard .steel {
+    background-color: #b9b7cf;
+}
+
+.typesCard .dragon {
+    background-color: #6f38f6;
+}
+
+.typesCard .fairy {
+    background-color: #f9aec7;
+}

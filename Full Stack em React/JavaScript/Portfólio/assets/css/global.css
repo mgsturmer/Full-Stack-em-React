@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    font-family:  'Open Sans', sans-serif;
+}
+
+body{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('/assets/fonts/neue-machina-regular.otf');
+}
+
+.main {
+    margin: .5rem;
+    padding: 1rem;
+    border: 1px solid #ffffff;
+    border-radius: .5rem;
+}

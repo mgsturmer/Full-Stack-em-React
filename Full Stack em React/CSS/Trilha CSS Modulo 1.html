@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplos de CSS</title>
+  <style>
+    
+    /* Formas de Declaração do CSS */
+    .interno {
+      color: blue;
+    }
+
+    /* Depurando o CSS */
+    .caixa-debug {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+      margin: 20px;
+      padding: 10px;
+      border: 2px solid black;
+    }
+
+    /* Seletores */
+    p {
+      color: green;
+    }
+
+    #destaque {
+      color: red;
+    }
+
+    .destaque {
+      background-color: yellow;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    input[type="text"] {
+      border: 2px solid blue;
+    }
+
+    /* Combinadores */
+    h1, h2, h3 {
+      color: purple;
+    }
+
+    div p {
+      color: orange;
+    }
+
+    ul > li {
+      color: pink;
+    }
+
+    h1 + p {
+      color: brown;
+    }
+
+    /* Largura e Altura */
+    .caixa-tamanho {
+      width: 300px;
+      height: 200px;
+      background-color: lightgreen;
+    }
+
+    /* Altura e Largura Máxima e Mínima */
+    .caixa-limites {
+      max-width: 400px;
+      min-width: 200px;
+      max-height: 300px;
+      min-height: 100px;
+      background-color: lightcoral;
+    }
+
+    /* Margin e Padding */
+    .caixa-espacamento {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+      margin: 20px;
+      padding: 10px;
+    }
+
+    /* Box Sizing */
+    .caixa-box-sizing {
+      width: 200px;
+      height: 200px;
+      background-color: lightpink;
+      padding: 20px;
+      border: 10px solid black;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <!-- Formas de Declaração do CSS -->
+  <h1 style="color: red;">Este é um título com CSS Inline</h1>
+  <p class="interno">Este parágrafo usa CSS Interno.</p>
+  <p class="externo">Este parágrafo usa CSS Externo.</p>
+
+  <!-- Depurando o CSS -->
+  <div class="caixa-debug">Inspecione-me!</div>
+
+  <!-- Seletores -->
+  <p>Este parágrafo é estilizado com um seletor de tag.</p>
+  <p id="destaque">Este parágrafo tem um ID único.</p>
+  <p class="destaque">Este parágrafo tem uma classe.</p>
+  <input type="text" placeholder="Texto">
+  <input type="password" placeholder="Senha">
+
+  <!-- Combinadores -->
+  <h1>Título 1</h1>
+  <h2>Título 2</h2>
+  <h3>Título 3</h3>
+
+  <div>
+    <p>Este parágrafo está dentro de uma div.</p>
+  </div>
+  <p>Este parágrafo não está dentro de uma div.</p>
+
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ul>
+
+  <h1>Título</h1>
+  <p>Este parágrafo é irmão do título.</p>
+  <p>Este parágrafo não é afetado.</p>
+
+  <!-- Largura e Altura -->
+  <div class="caixa-tamanho"></div>
+
+  <!-- Altura e Largura Máxima e Mínima -->
+  <div class="caixa-limites"></div>
+
+  <!-- Margin e Padding -->
+  <div class="caixa-espacamento"></div>
+
+  <!-- Box Sizing -->
+  <div class="caixa-box-sizing"></div>
+</body>
+</html>

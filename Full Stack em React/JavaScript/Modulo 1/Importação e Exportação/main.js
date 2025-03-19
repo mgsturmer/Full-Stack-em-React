@@ -1,0 +1,1 @@
+const funcoes = require('./Modulo 1/Importação e Exportação/Funcoes auxiliares.js')
